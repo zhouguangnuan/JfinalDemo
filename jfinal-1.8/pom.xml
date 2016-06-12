@@ -13,11 +13,18 @@
 		<java.version>1.7</java.version>
 		<maven-compiler-plugin.version>2.3.2</maven-compiler-plugin.version>
 
+		<servlet-api.version>3.0.1</servlet-api.version>
+
 		<jfinal.version>1.8</jfinal.version>
 		<jfinal-ext.version>3.1.2</jfinal-ext.version>
 		<cos.version>26Dec2008</cos.version>
-		
+
 		<fastjson.version>1.2.5</fastjson.version>
+
+		<beetl.version>2.0.2</beetl.version>
+
+		<!-- commons -->
+		<guava.version>18.0</guava.version>
 	</properties>
 
 	<dependencies>
@@ -28,18 +35,25 @@
 			<scope>test</scope>
 		</dependency>
 
+		<!-- servlet -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>${servlet-api.version}</version>
+		</dependency>
+
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<version>5.1.30</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>com.mchange</groupId>
 			<artifactId>c3p0</artifactId>
 			<version>0.9.5.1</version>
 		</dependency>
-		
+
 		<!-- jfinal -->
 		<dependency>
 			<groupId>com.jfinal</groupId>
@@ -61,6 +75,26 @@
 			<groupId>com.alibaba</groupId>
 			<artifactId>fastjson</artifactId>
 			<version>${fastjson.version}</version>
+		</dependency>
+
+		<!-- beetl模板 -->
+		<dependency>
+			<groupId>org.beetl</groupId>
+			<artifactId>beetl-core</artifactId>
+			<version>${beetl.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>cglib</groupId>
+			<artifactId>cglib-nodep</artifactId>
+			<version>2.1_3</version>
+		</dependency>
+
+		<!-- commons -->
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>${guava.version}</version>
 		</dependency>
 	</dependencies>
 
